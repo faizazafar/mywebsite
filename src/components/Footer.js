@@ -68,26 +68,32 @@ const Footer = () => {
                   <h2>Follow Us</h2>
                   <div className="row">
                     <div className="col-3 mx-auto">
-                     <FaFacebookSquare></FaFacebookSquare>
+                     {/* <FaFacebookSquare></FaFacebookSquare> */}
+                     <i class="fab fa-facebook-f fontawesome-style"></i>
+
                     </div>
                     <div className="col-3 mx-auto">
                       <a
                         href="https://www.instagram.com/thapatechnical/"
                         target="_thapa">
-                        <FaInstagramSquare></FaInstagramSquare>
+                        {/* <FaInstagramSquare></FaInstagramSquare> */}
+                        <i class="fab fa-instagram fontawesome-style"></i>
                       </a>
                     </div>
                     <div className="col-3 mx-auto">
-                    <FaYoutubeSquare></FaYoutubeSquare>
+                    {/* <FaYoutubeSquare></FaYoutubeSquare> */}
+                    <i class="fab fa-youtube fontawesome-style"></i>
                     </div>
-                    <div className="col-3 mx-auto">
-                    <FaTwitterSquare></FaTwitterSquare>                    </div>
+                    <div className="col-3 mx-auto ">
+                    <i class="fab fa-twitter fontawesome-style"></i>
+                    {/* <FaTwitterSquare></FaTwitterSquare>                    */}
+                     </div>
                   </div>
                 </div>
               </div>
               <hr />
               <div className="mt-5">
-                <p className="main-hero-para text-center w-100">
+                <p className="main-para text-center w-100">
                   Copyright @ 2021 Technoknowledge. All rights reserved.
                 </p>
               </div>

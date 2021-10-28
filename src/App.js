@@ -1,23 +1,25 @@
-import React from 'react'
-import Aboutus from './components/Aboutus'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Howitwork from './components/Howitwork'
-import Navbar from './components/Navbar'
-import Navbarr from './components/Navbarr'
-import { Stateclass } from './components/Stateclass'
+import React from "react";
+import Home from "./Home";
+import { Route, Switch } from "react-router";
+import About from "./Pages/About";
+// import Contact from "./Pages/Contact";
+import Service from "./Pages/Service";
+import Error from "./Pages/Error";
 
-export default function App() {
+const App = () => {
   return (
-    <div>
-      <Navbarr></Navbarr>
-      <Header></Header>
-      <Howitwork> </Howitwork>
-      <Aboutus></Aboutus>
+    <>
+      <Switch>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/about" component={About}></Route>
+        {/* <Route path="/contact" component={Contact}></Route> */}
+        <Route path="/service" component={Service}></Route>
+        <Route path="/error"component={Error}></Route>
+      </Switch>
+    </>
+  );
 
-      {/* <Stateclass></Stateclass> */}
-      
+  // switch is for only rendering once 
+};
 
-    </div>
-  )
-}
+export default App;

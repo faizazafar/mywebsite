@@ -225,47 +225,45 @@ header {
   place-items: center;
   text-align: center !important;
   margin: 2rem auto;
-  padding: 2rem;
-  
-}
-/* --------------------------------- Work Section below hero section   ends  
-                        -------------------------------------------------------*/
+  align-items: center;
+padding-top: 2rem;}
 
+
+.common-section {
+  margin: 5rem 0;
+}
 
 .our-services img {
   width: 90%;
-  height: 70%;
+  height: 40%;
   margin-top: 10rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
   border-radius: 1.5rem;
 }
 
+.our-services-list{
+
+  padding-left: 10rem;
+}
 
 .our-services .mini-title {
-   margin: 3rem 0;
   text-transform: uppercase;
-  font-style: normal;
+  font-weight: normal;
+  margin: 3rem 0;
   text-align: left;
   font-size: 2.0rem;
+  
 }
 
-
-.our-services .main-head
- {
-font-weight: bolder;
+.our-services .main-heading {
+  font-weight: bolder;
 }
 
-.our-ser-list {
-
-  padding-left: 2.5rem;
-}
-
-.ourservice-list {
+.our-services-info {
   margin-top: 4rem;
 }
 
-.service-num{
-
+.our-services .our-services-number {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -273,16 +271,176 @@ font-weight: bolder;
   border: 0.1rem solid var(--primary-color);
   font-size: 1.5rem;
   color: var(--primary-color);
-  /* padding-left: 1rem; */
-  align-items: center;
+  /* to make enything in centre */
   display: grid;
+  place-items: center;
 }
 
-.service-data{
+.our-services-data {
   padding-left: 2rem;
 }
 
-.service-data p {
-
+.our-services .our-services-data p {
   margin: 1rem 0;
+}
+.our-services-rightside-content{
+  padding-left: 6rem;
+}
+.our-services-rightside
+{
+  margin-top: 10rem;
+}
+/* --------------------------------- Work Section below hero section   ends  
+                        -------------------------------------------------------*/
+
+footer {
+  padding: 5rem 0;
+  background-color: #182334;
+  color: #fff;
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+footer li:hover {
+  color: var(--primary-color);
+}
+
+footer .main-para {
+  margin:0
+}
+
+footer .fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  width: 0rem;
+  height: 0rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+footer .fontawesome-style:hover {
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+  color: #fff;
+}
+
+@keyframes rotatefont {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+/* service section */
+.ser-mcon {
+  margin: 5rem ; 
+   /* padding: 5rem ; */
+}
+
+.ser-mcon .main-heading {
+  margin: 3rem 0;
+}
+
+.sub-div {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+  padding: 0 6rem;
+
+}
+
+.sub-div:hover {
+  background-color: var(--bgcolor);
+  cursor: pointer;
+}
+
+.sub-div:hover > .fontawesome-style {
+  background-color: #fff;
+}
+
+.sub-div .main-para {
+  width: 100%;
+}
+
+.ser-mcon .sub-div .fontawesome-style {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+@media (min-width: 1400px) {
+  .ser-con
+   .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .ser-con .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+}
+
+/* contact section  */
+.cntct-sec {
+  margin: 15rem 0;
+}
+
+.cntct-left img {
+  min-width: 60%;
+  max-height: 40rem;
+  height: auto;
+}
+
+.contact-input-feild {
+  margin-bottom: 4rem;
+}
+
+.cntct-right{
+
+  padding-left: 10rem;
+}
+
+.cntct-right form .form-control {
+  border: 1px solid #ced4da;
+  /* -webkit-appearance: none; */
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-weight: lighter; 
+}
+
+.cntct-right form .form-check-input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-checkbox-style {
+  margin: 4rem 0;
+}
+
+.cntct-right form .main-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 75%;
+  padding: 0 2rem;
 }
